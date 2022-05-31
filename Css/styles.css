@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 /* FUENTES */
@@ -32,6 +31,27 @@
     grid-template-areas: "cab"
         "baner"
         "info"
+        "footer";
+}
+
+.allContein1 {
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 20rem 50rem 300px 3rem;
+    height: auto;
+    grid-template-areas: "cab"
+        "info"
+        "galeria"
+        "footer";
+}
+
+.allContein2 {
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 20rem 38rem 3rem;
+    height: auto;
+    grid-template-areas: "cab"
+        "productos"
         "footer";
 }
 
@@ -67,12 +87,166 @@ section.infoC {
     height: 100%;
 }
 
-footer {
-    grid-area: footer;
-    display: block;
-    align-items: end;
+.desplegable {
+    grid-area: info;
+    height: auto;
+    background-color: rgba(209, 227, 221, 0.4);
+    border-bottom: rgb(209, 227, 221) 2px solid;
+}
+
+.SubSub li {
+    padding: 2px;
+    font-size: 10px;
+    text-align: center;
+    font-family: CleanSans-Reg;
+}
+
+#galeria {
+    grid-area: galeria;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 380px;
+    margin-top: 20px;
+    background-image: url('../img/fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.galeria {
+    display: flex;
+    flex-direction: row;
+    width: 98vw;
+    overflow-x: scroll;
+}
+
+.galeria li img {
+    margin: 0 10px;
+    height: 300px;
+    width: 400px;
+}
+
+#productos {
+    grid-area: productos;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%
+}
+
+.productos {
+    width: 90%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.caja {
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    background-color: rgba(209, 227, 221, 0.6);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.productos img {
     width: 100%;
     height: auto;
+}
+
+.prOp {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 5px;
+}
+
+.prOp input,
+.prOp label,
+.prOp select {
+    margin: 10px;
+}
+
+.btn {
+    display: inline;
+    position: sticky;
+    bottom: 10px;
+    border: #476a6f 1px solid;
+    padding: 5px;
+    color: #476a6f;
+    font-size: 10px;
+    font-family: CleanSans-Reg;
+    background-color: rgb(209, 227, 221);
+    margin: 5px;
+}
+
+.btnR {
+    position: sticky;
+    border: #476a6f 1px solid;
+    padding: 5px;
+    color: #476a6f;
+    font-size: 10px;
+    font-weight: 400;
+    font-family: CleanSans-Reg;
+    background-color: rgb(209, 227, 221);
+    left: 600px;
+    bottom: 10px;
+    margin: 5px;
+}
+
+#contactos {
+    grid-area: productos;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cuadro,
+.cua1 {
+    height: auto;
+    margin: 10px;
+    padding-bottom: 10px;
+    border: #476a6f 2px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url('../img/fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cua1 {
+    height: 320px;
+}
+
+.cua2,
+.cua3 {
+    width: 90%;
+    margin: 10px 0;
+}
+
+.cua3 {
+    height: 60%;
+}
+
+legend.allP {
+    border: #476a6f 2px solid;
+    padding: 5px 15px;
+    background-color: rgb(209, 227, 221);
+}
+
+footer {
+    grid-area: footer;
+    width: 100%;
+    height: 3rem;
     background-color: rgba(71, 106, 111, 0.65);
 }
 
@@ -143,14 +317,26 @@ h2 {
     color: rgb(0, 0, 0);
 }
 
-h3 {
+h3,
+h4,
+h5 {
     color: rgb(71, 106, 111);
     font-family: CleanSans-Bold;
     font-size: .75em;
     text-align: center;
     margin: 0 0 1rem 0;
-    padding: 10px 10px;
+    padding: 10px;
     background-color: rgba(209, 227, 221, 0.75);
+    width: 100%;
+}
+
+h4 {
+    padding: 7px;
+    border-top: 1px solid rgba(71, 106, 111, 0.2);
+}
+
+h5 {
+    padding: 4px;
 }
 
 .allP,
@@ -185,7 +371,7 @@ a {
     text-decoration: underline;
 }
 
-.negrita{
+.negrita {
     font-weight: bold;
 }
 
@@ -256,11 +442,15 @@ th {
 
 @media screen and (min-width:600px) {
     .allContein {
-        grid-template-areas: "cab"
-            "baner"
-            "info"
-            "footer";
         grid-template-rows: 10rem 40rem 20rem 4rem;
+    }
+
+    .allContein1 {
+        grid-template-rows: 10rem 35rem 410px 4rem;
+    }
+
+    .allContein2 {
+        grid-template-rows: 10rem 40rem 4rem;
     }
 
     header {
@@ -276,7 +466,7 @@ th {
     }
 
     section.banerWI {
-        margin-top: 40px;
+        margin-top: 20px;
         display: flex;
         flex-direction: row;
         width: 100%;
@@ -291,8 +481,94 @@ th {
         height: auto;
     }
 
+    .desplegable {
+        margin-top: 20px;
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .SubDesplegable {
+        margin-top: 10px;
+        width: 50%;
+        border: rgb(209, 227, 221) 2px solid;
+    }
+
+    #galeria {
+        height: 480px;
+    }
+
+    .galeria {
+        margin-top: 20px;
+    }
+
+    .galeria li img {
+        height: 400px;
+        width: 550px;
+    }
+
+    #productos {
+        margin: 20px 0;
+    }
+
+    #productos .allP {
+        margin: 20px;
+    }
+
+    .productos {
+        height: 31rem;
+    }
+
+    .productos div {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .caja {
+        width: 45%;
+        justify-content: center;
+        margin: 5px;
+    }
+
+    .prOp input,
+    .prOp label,
+    .prOp select {
+        margin: 5px;
+    }
+
+    .btn,
+    .btnR {
+        width: 25%;
+        margin: 0 15%;
+    }
+
+    .conE {
+        margin-top: 20px;
+    }
+
+    #contactos .allP {
+        margin: 10px;
+    }
+
+    .cua1 {
+        height: 340px;
+        max-height: 400px;
+    }
+
+    .cua2 {
+        height: 10%;
+    }
+
+    .botones {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
     footer {
         grid-area: footer;
+        height: 4rem;
     }
 
     #menu {
@@ -410,6 +686,10 @@ th {
         margin: 0;
     }
 
+    h4 {
+        border: none;
+    }
+
     .allP {
         font-size: 1em;
         margin: 4em 10px;
@@ -464,11 +744,15 @@ th {
 
 @media screen and (min-width:1024px) {
     .allContein {
-        grid-template-areas: "cab"
-            "baner"
-            "info"
-            "footer";
         grid-template-rows: 12rem 60rem 30rem 4rem;
+    }
+
+    .allContein1 {
+        grid-template-rows: 12rem 35rem 650px 4rem;
+    }
+
+    .allContein2 {
+        grid-template-rows: 12rem 52rem 4rem;
     }
 
     section.baner {
@@ -480,6 +764,75 @@ th {
         margin-top: 40px;
         bottom: 10px;
         height: 32rem;
+    }
+
+
+    .desplegable {
+        flex-direction: column;
+    }
+
+    .SubDesplegable {
+        font-size: 20px;
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .SubSub {
+        width: 50%;
+        border: rgb(209, 227, 221) 2px solid;
+    }
+
+    .SubSub li {
+        font-size: 16px;
+    }
+
+    #galeria {
+        height: 600px;
+    }
+
+    .galeria li img {
+        height: 512px;
+        width: 700px;
+    }
+
+    #productos {
+        height: 50rem;
+    }
+
+    #productos .allP {
+        margin: 40px;
+        font-size: 20px;
+    }
+
+    .productos {
+        height: 40rem;
+        width: 95%;
+    }
+
+    .caja {
+        width: 32%;
+    }
+
+    .btn,
+    .btnR {
+        width: 25%;
+        margin: 0 10%;
+        left: 20%;
+    }
+
+    #contactos .allP {
+        margin: 20px 0;
+        font-size: 18px;
+    }
+    .contacto{
+        height: 700px;
+        justify-content: center;
+    }
+
+    .cua1{
+        height: 500px;
+        max-height: 100%;
     }
 
     footer {
@@ -531,9 +884,9 @@ th {
         font-size: 1.5em;
     }
 
-.links{
-    font-size: 1em;
-}
+    .links {
+        font-size: 1em;
+    }
 
     /*TABLAS*/
 
