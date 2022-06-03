@@ -6,64 +6,92 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../img/AviIcon.jpg" type="image/png" />
-    <title>Avicola la Granja | Quienes Somos</title>
-    <link rel="stylesheet" href="../Css/styles.css">
+    <title>Avicola la Granja | Historia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
-<body>
-    <div class="allContein">
-        <header>
-            <img class="logo" src="../img/AvLog-SL2.png" alt="Logo Avicola la Granja">
-            <img class="logo1" src="../img/AvLog-SL1.png" alt="Logo Avicola la Granja">
-            <div>
-                <h1>Avicola la Granja</h1>
-                <h2>VENTA X MAYOR Y MENOR DE POLLOS Y HUEVOS</h2>
+<body class="container-fluid ">
+    <header class="row">
+        <section>
+            <div class="acomodado">
+                <img class="logo rounded float-start" src="../img/AvLog-SL2.png" alt="Logo Avicola la Granja">
+                <img class="logo1 rounded float-end" src="../img/AvLog-SL1.png" alt="Logo Avicola la Granja">
+                <div class="text-center">
+                    <h1 class="display-2 text-center">Avicola la Granja</h1>
+                    <h2 class=" text-center">VENTA X MAYOR Y MENOR DE POLLOS Y HUEVOS</h2>
+                </div>
             </div>
-
-            <nav id="menu">
-                <ul class="menu">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="#">Quienes Somos</a> </li>
-                    <li><a href="../pages/productos.html" target="_blank">Productos</a></li>
-                    <li><a href="../pages/pedido.html" target="_blank">Realizar Pedido</a></li>
-                    <li><a href="../pages/contacto.html" target="_blank">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <main>
-            <a href="https://www.whatsapp.com/?lang=es" target="_blank"><img class="wpp animate__animated animate__rotateIn" src="https://cdn.icon-icons.com/icons2/555/PNG/512/whatsapp_icon-icons.com_53606.png" alt="Icono de whatsapp"></a>
-            <section class="banerWI centerTxt">
-                <div class="der">
-                    <h3>Quienes Somos</h3>
-                    <p class="allP">
+        </section>
+        <nav id="menu" class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Historia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./pedido.html">Pedido</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+<!--         <a href="https://www.whatsapp.com/?lang=es" target="_blank"><img
+                class="wpp fixed-bottom animate__animated animate__rotateIn"
+                src="https://cdn.icon-icons.com/icons2/555/PNG/512/whatsapp_icon-icons.com_53606.png"
+                alt="Icono de whatsapp"></a> -->
+        <section class="row baner">
+            <div class="col-md-6 sideText">
+                <h3>Quienes Somos</h3>
+                <p class="text-center"><em>
                         Somos un local y distribuidor ubicados en la zona sur de Córdoba (Capital).
                         Comenzo como un pequeño sueño de inmigrantes italianos en los años 70 y hasta hoy en dia
                         continuamos con ello
                         a demas de proveer
                         pollos, derivados y elaborados, a un gran sector de la ciudad.
-                    </p>
-                </div>
-                <div class="izq">
-                <img class="banImg  animate__animated animate__fadeInDown" src="../img/qs.1.jpg" alt="Despacho">
-            </div>           
-            </section>
-            <section class="infoC centerTxt">
-                <p class="allP">
-                Trabajamos con las plantas productoras <span class="negrita">"del Campo"</span> y <span class="negrita">"La Española"</span>.
+                    </em></p>
+            </div>
+            <div class="col-md-6">
+                <img class="sideImg img-fluid animate__animated animate__fadeInDown" src="../img/qs.1.jpg"
+                    alt="Despacho">
+            </div>
+        </section>
+        <section class="row">
+            <p class="text-center col-xl-4 itemsC">
+                Trabajamos con las plantas productoras <strong>"del Campo"</strong> y <strong class="">"La
+                    Española"</strong>.
                 En ambos casos ofrecemos la venta mayoriasta de pollo por cajón y trozados por cantidad; y tambien al
                 minorista, tanto pollo entero, como trozados.
                 Ademas contamoos con productos elaborados de pollo y merluza, como rebozados, milanesas, medallones,
                 etc.
             </p>
-
-            <table>
-                <caption>Comparacion de marcas</caption>
-                <th>Marcas </th>
-                <th>Temperatura </th>
-                <th>Color </th>
-                <th>Empaquetado </th>
+            <section class="col-xl-4 d-none d-sm-inline-block ">
+            <table class=" table table-bordered caption-top text-center table-responsive">
+                <caption class="text-center">Comparacion de marcas</caption>
+                <thead class="table-success">
+                    <th>Marcas </th>
+                    <th>Temperatura </th>
+                    <th>Color </th>
+                    <th>Empaquetado </th>
+                </thead>
                 <tr>
                     <td>"del Campo"</td>
                     <td>pre enfriado (con frio de camara)</td>
@@ -77,28 +105,78 @@
                     <td>armado a pedido, minimo 20 Kg</td>
                 </tr>
             </table>
+        </section>
 
-            <p class="allP">
+            <table class=" d-sm-none table table-bordered table-sm caption-top text-center table-responsive">
+                <caption class="text-center">Comparacion de marcas</caption>
+                <thead class="table-success">
+                    <th>Marcas </th>
+                    <th>Temperatura </th>
+                </thead>
+                <tr>
+                    <td>"del Campo"</td>
+                    <td>pre enfriado (con frio de camara)</td>
+                </tr>
+                <tr>
+                    <td>"La Española"</td>
+                    <td>fresco de chacra( frio de heladera</td>
+                </tr>
+            </table>
+            <table class=" d-sm-none table table-bordered table-sm text-center table-responsive">
+                <thead class="table-success">
+                    <th>Color </th>
+                    <th>Empaquetado </th>
+                </thead>
+                <tr>
+                    <td>mas blanco</td>
+                    <td>cajon cerrado de 20 Kg</td>
+                </tr>
+                <tr>
+                    <td>mas amarillo</td>
+                    <td>armado a pedido, minimo 20 Kg</td>
+                </tr>
+            </table>
+
+            <p class="text-center col-xl-4 itemsC">
                 El establecimiento cuenta con todo el equipo preparado y personal capacitado para la manipulacion de
-                alimetnos, a demas de todas las <span><a class="links" href="https://cordoba.gob.ar/desde-hoy-las-habilitaciones-definitivas-de-negocios-son-on-line/">habilitaciones</a></span> necesarias para la apertura del mismo.
+                alimetnos, a demas de todas las <a class=""
+                    href="https://cordoba.gob.ar/desde-hoy-las-habilitaciones-definitivas-de-negocios-son-on-line/"><mark
+                        class="grad">habilitaciones</mark></a>
+                necesarias para la apertura del mismo.
                 Además en el predio va a encontrar amplio estacionamiento para su vehiculo.
             </p>
             <!-- el link de habilitaciones puse la pagina del gobierno, pero deberia de ser la pagina de la habilitación, esta hecha a proposito para no usar datos reales -->
         </section>
-        </main>
-
-        <footer>
-            <section>
-                <ul class="footer" id="redes">
-                    <li><a href="https://facebook.com" target="_blank"><img src="../img/fIcon.png" alt=""></a></li>
-                    <li><a href="https://instagram.com" target="_blank"><img src="../img/iIcon.png" alt=""></a></li>
-                    <li><a href="https://gmail.com" target="_blank"><img src="../img/gIcon.png" alt=""></a></li>
-                    <li><a href="../index.html"><img src="../img/AviIcon.jpg" alt="Logo Avicola la Granja"></a></li>
-                </ul>
-            </section>
-        </footer>
+    </main>
 
 
+    <footer>
+        <section class="row">
+            <ul id="redes" class="footer">
+                <li>
+                    <a href="https://gmail.com"><img class="fIcon"
+                            src="https://cdn.icon-icons.com/icons2/272/PNG/512/Gmail_29991.png" alt=""></a>
+                </li>
+                <li>
+                    <a href="https://instagram.com"><img
+                            src="https://cdn.icon-icons.com/icons2/1753/PNG/512/iconfinder-social-media-applications-3instagram-4102579_113804.png"
+                            alt="" class="fIcon"></a>
+                </li>
+                <li>
+                    <a aria-current="page" href="https://facebook.com"><img class="fIcon"
+                            src="https://cdn.icon-icons.com/icons2/555/PNG/512/facebook_icon-icons.com_53612.png"
+                            alt=""></a>
+                </li>
+                <li>
+                    <a href="../index.html"><img class="fIcon" src="../img/AvLog-SL1.png" alt=""></a>
+                </li>
+            </ul>
+        </section>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
     </div>
 
 </body>
