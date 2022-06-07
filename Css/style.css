@@ -24,11 +24,6 @@ li.nav-item {
     background-size: cover;
 }
 
-.sideText {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
 
 .SubSub {
     text-align: center;
@@ -151,15 +146,9 @@ a {
         flex-direction: row;
     }
 
-    .sideText {
-        order: 1;
-    }
-
     .sideImg {
         padding: 1%;
     }
-
-
 
 }
 
@@ -177,8 +166,6 @@ a {
     .parrafos {
         margin-top: 4rem;
     }
-
-
 }
 
 @media screen and (min-width:1400px) {
