@@ -1,0 +1,153 @@
+header {
+  background-image: linear-gradient(to bottom, #476a6f, #d1e3dd);
+}
+
+header .acomodado {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+@media (min-width: 576px) {
+  header .acomodado {
+    display: unset;
+  }
+}
+
+header .acomodado .logo,
+header .acomodado .logo1 {
+  width: 15%;
+  min-width: 80px;
+  margin-top: 1rem;
+}
+
+header .acomodado .logo1 {
+  display: none;
+}
+
+@media (min-width: 576px) {
+  header .acomodado .logo1 {
+    display: block;
+  }
+}
+
+header nav li.nav-item {
+  margin: auto 1rem;
+  padding: auto 1rem;
+}
+
+main .wpp {
+  margin: auto auto 4rem 1%;
+  width: 10%;
+  max-width: 64px;
+  max-height: 64px;
+}
+
+main .baner {
+  background-image: url("../img/fondo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main .parrafos {
+  margin-top: 2rem;
+}
+
+main section.cuad article.cuadC div.dobC ul.SubSub {
+  text-align: center;
+}
+
+@media (min-width: 576px) {
+  main section.cuad div.dobC {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  main section.cuad div.dobC ul.SubSub {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  main section.cuad section.cuad {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  main section.cuad section.cuad article.cuadC {
+    width: 48%;
+    margin: 1%;
+  }
+}
+
+main p.itemsC {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+main P.NNR {
+  margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .HyU {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .parrafos {
+    margin: 4rem 0;
+  }
+
+  .sideImg {
+    padding: 1%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .HyU {
+    display: unset;
+  }
+}
+
+footer {
+  max-height: 4rem;
+  background-image: linear-gradient(to bottom, #d1e3dd, #476a6f);
+}
+
+footer li {
+  padding: 1rem;
+}
+
+footer li img {
+  max-width: 2rem;
+  max-height: 2rem;
+}
+
+h1 {
+  margin-top: 3%;
+}
+
+h3,
+h4,
+h5 {
+  padding: .5rem;
+  text-align: center;
+  background-color: #d1e3dd;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.grad {
+  background-color: #d1e3dd;
+}
+
+.Degrad {
+  background-image: linear-gradient(to bottom, #476a6f, #d1e3dd);
+}
