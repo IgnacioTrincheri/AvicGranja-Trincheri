@@ -23,9 +23,8 @@ header {
 
 main .wpp {
   margin: auto auto 4rem 1%;
-  width: 10%;
-  max-width: 64px;
-  max-height: 64px; }
+  width: 64px;
+  height: 64px; }
 
 main .baner {
   background-image: url("../img/fondo.jpg");
@@ -88,7 +87,7 @@ h1 {
 h3,
 h4,
 h5 {
-  padding: .5rem;
+  padding: 0.5rem;
   text-align: center;
   background-color: #d1e3dd; }
 

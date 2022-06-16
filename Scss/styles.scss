@@ -1,4 +1,9 @@
-@import "coloresYfondos";
+@import 'variables';
+@import 'mixins';
+
+@function color($color-name) {
+    @return map-get($colors, $color-name);
+}
 
 header {
     background-image: $degH;
@@ -8,7 +13,7 @@ header {
         flex-flow: column wrap;
         align-items: center;
 
-        @media(min-width:576px) {
+        @include landscape {
             display: unset;
         }
 
@@ -16,13 +21,13 @@ header {
         .logo1 {
             width: 15%;
             min-width: 80px;
-            margin-top: 1rem;
+            margin-top: ($MTop/2);
         }
 
         .logo1 {
             display: none;
 
-            @media(min-width:576px) {
+            @include landscape {
                 display: block;
             }
         }
@@ -31,7 +36,7 @@ header {
     nav {
         li.nav-item {
             margin: auto 1rem;
-            padding: auto 1rem;
+            padding: auto $padding;
         }
     }
 }
@@ -39,19 +44,16 @@ header {
 main {
     .wpp {
         margin: auto auto 4rem 1%;
-        width: 10%;
-        max-width: 64px;
-        max-height: 64px;
+        @include medidas1(64px, 64px);
+
     }
 
     .baner {
-        background-image: $plumas;
-        background-repeat: no-repeat;
-        background-size: cover;
+        @include fondoPlumas;
     }
 
     .parrafos {
-        margin-top: 2rem;
+        margin-top: $MTop;
     }
 
     section.cuad {
@@ -63,7 +65,7 @@ main {
             }
         }
 
-        @media(min-width: 576px) {
+        @include landscape {
             div.dobC {
                 display: flex;
                 flex-flow: row wrap;
@@ -74,7 +76,7 @@ main {
             }
         }
 
-        @media(min-width:1200px) {
+        @include notebook {
             section.cuad {
                 display: flex;
                 flex-flow: row wrap;
@@ -88,17 +90,17 @@ main {
     }
 
     p.itemsC {
-        margin-top: 2.5rem;
+        margin-top: ($MTop+.5);
         margin-bottom: 1rem;
 
     }
 
     P.NNR {
-        margin-top: 1rem;
+        margin-top: ($MTop/2);
     }
 }
 
-@media(min-width: 768px) {
+@include tablet {
     .HyU {
         display: flex;
         flex-direction: row;
@@ -114,7 +116,7 @@ main {
 
 }
 
-@media(min-width:1400px) {
+@include desktop {
     .HyU {
         display: unset;
     }
@@ -126,7 +128,7 @@ footer {
     background-image: $degF;
 
     li {
-        padding: 1rem;
+        padding: $padding;
 
         img {
             max-width: 2rem;
@@ -142,9 +144,9 @@ h1 {
 h3,
 h4,
 h5 {
-    padding: .5rem;
+    padding: ($padding/2);
     text-align: center;
-    background-color: $MiGreen;
+    background-color: color(secundario);
 }
 
 li {
@@ -156,7 +158,7 @@ a {
 }
 
 .grad {
-    background-color: $MiGreen;
+    background-color: color(secundario);
 }
 
 .Degrad {
