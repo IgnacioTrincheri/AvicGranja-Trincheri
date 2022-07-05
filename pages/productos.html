@@ -7,8 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../img/AviIcon.jpg" type="image/png" />
     <title>Productos | Avicola la Granja</title>
-    <meta name="description" content="Ofrecemos una variedad de productos completamente frescos y congelados, todo de la mejor calidad">
-    <meta name="keywords" content="productos frescos, productos, pollo fresco, pollo por mayor, polleria minorista, congelados, patas, patamuslo, pechuga, cuarto trasero ">
+    <meta name="description"
+        content="Ofrecemos una variedad de productos completamente frescos y congelados, todo de la mejor calidad">
+    <meta name="keywords"
+        content="productos frescos, productos, pollo fresco, pollo por mayor, polleria minorista, congelados, patas, patamuslo, pechuga, cuarto trasero ">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../Css/styles.css">
@@ -66,38 +68,37 @@
 
     <main>
         <a href="https://www.whatsapp.com/?lang=es" target="_blank"><img
-            class="wpp fixed-bottom animate__animated animate__rotateIn"
-            src="../img/whatsapp.svg"
-            alt="Icono de whatsapp"></a>
-        <section class="cuad">
-            <article class="w-100">
-                <h3>Nuestros Productos</h3>
+                class="wpp rounded-3 fixed-bottom animate__animated animate__rotateIn" src="../img/whatsapp.svg"
+                alt="Icono de whatsapp"></a>
+        <section class="cuad row">
+            <article class="w-100 col col-12">
+                <h3 class="shadow-sm rounded">Nuestros Productos</h3>
             </article>
-            <article class="cuadC">
+            <article class="cuadC col col-12 col-xl-6">
                 <p>
-                    <button class="btn grad w-100" type="button" data-bs-toggle="collapse"
+                    <button class="btn grad w-100 shadow-sm " type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                        <h4 id="mayorista">Mayorista</h4>
+                        <h4 id="mayorista" >Mayorista</h4>
                     </button>
                 </p>
                 <div class="collapse w-100" id="collapseExample">
                     <div class="dobC">
-                        <ul class="SubSub ">
-                            <h5>Cajones de Pollo</h5>
+                        <ul class="SubSub">
+                            <h5 class="shadow-sm rounded">Cajones de Pollo</h5>
                             <li>La Española</li>
                             <li>Del Campo</li>
                         </ul>
-                        <ul class="SubSub"> 
-                            <h5>Cajones de Trozados</h5>
+                        <ul class="SubSub">
+                            <h5 class="shadow-sm rounded">Cajones de Trozados</h5>
                             <li>Patamuslo</li>
                             <li>Pechuga</li>
                             <li>Alas</li>
                         </ul>
                     </div>
             </article>
-            <article class="cuadC">
+            <article class="cuadC col col-12 col-xl-6">
                 <p>
-                    <button class="btn grad w-100" type="button" data-bs-toggle="collapse"
+                    <button class="btn grad w-100 shadow-sm" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
                         <h4 id="minorista">Minorista</h4>
                     </button>
@@ -105,26 +106,26 @@
                 <div class="collapse w-100" id="collapseExample1">
                     <div class="dobC">
                         <ul class="SubSub">
-                            <h5>Trozados</h5>
+                            <h5 class="shadow-sm rounded">Trozados</h5>
                             <li>Patamuslo</li>
                             <li>Pechuga</li>
                             <li>Alas</li>
                         </ul>
                         <ul class="SubSub">
-                            <h5>Elaborados</h5>
+                            <h5 class="shadow-sm rounded">Elaborados</h5>
                             <li>Milanesas</li>
                             <li>Arollados</li>
                             <li>
                         </ul>
                         <ul class="SubSub">
-                            <h5>Almacén</h5>
+                            <h5 class="shadow-sm rounded">Almacén</h5>
                             <li>Fideos</li>
                             <li>Aceite</li>
                             <li>Carbón</li>
                             <li>
                         </ul>
                         <ul class="SubSub">
-                            <h5>Congelados</h5>
+                            <h5 class="shadow-sm rounded">Congelados</h5>
                             <li>Patitas</li>
                             <li>Medalon de pollo</li>
                             <li>Medallon de merluza</li>
@@ -133,10 +134,10 @@
                 </div>
             </article>
         </section>
-    
+
         <section id="galeria">
-            <h3>Galeria</h3>
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <h3 class="shadow rounded">Galeria</h3>
+            <div id="carouselExampleIndicators" class="carousel slide d-md-none" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
                         class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -197,30 +198,180 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
+            <div id="carouselMd" class="carousel slide d-none d-md-block d-xxl-none"
+                data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselMd" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselMd" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselMd" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselMd" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselMd" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col col-md-6"><img src="../img/Prodc.jpg" class="d-block w-100" alt="Productos">
+                            </div>
+                            <div class="col col-md-6"><img src="../img/Patas2.jpg" class="d-block w-100"
+                                    alt="Patamuslo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col col-md-6"><img src="../img/pll.jpg" class="d-block w-100" alt="Pollo">
+                            </div>
+                            <div class="col col-md-6"><img src="../img/Prodc.jpg" class="d-block w-100" alt="Productos">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col col-md-6"><img src="../img/Patas2.jpg" class="d-block w-100"
+                                    alt="Patamuslo">
+                            </div>
+                            <div class="col col-md-6"><img src="../img/pll.jpg" class="d-block w-100" alt="Pollo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col col-md-6"><img src="../img/Prodc.jpg" class="d-block w-100" alt="Productos">
+                            </div>
+                            <div class="col col-md-6"><img src="../img/Patas2.jpg" class="d-block w-100"
+                                    alt="Patamuslo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col col-md-6"><img src="../img/pll.jpg" class="d-block w-100 " alt="Pollo">
+                            </div>
+                            <div class="col col-md-6"><img src="../img/Prodc.jpg" class="d-block w-100" alt="Productos">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselMd"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselMd"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div id="carouselXxl" class="carousel slide d-none d-xxl-inline-block"
+                data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselXxl" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselXxl" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselXxl" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselXxl" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselXxl" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col col-md-4"><img src="../img/Prodc.jpg" class="d-block w-100" alt="Productos">
+                            </div>
+                            <div class="col col-md-4"><img src="../img/Patas2.jpg" class="d-block w-100"
+                                    alt="Patamuslo">
+                            </div>
+                            <div class="col col-md-4"><img src="../img/pll.jpg" class="d-block w-100" alt="Pollo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col col-md-4"><img src="../img/Prodc.jpg" class="d-block w-100" alt="Productos">
+                            </div>
+                            <div class="col col-md-4"><img src="../img/Patas2.jpg" class="d-block w-100"
+                                    alt="Patamuslo">
+                            </div>
+                            <div class="col col-md-4"><img src="../img/pll.jpg" class="d-block w-100" alt="Pollo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col col-md-4"><img src="../img/Prodc.jpg" class="d-block w-100" alt="Productos">
+                            </div>
+                            <div class="col col-md-4"><img src="../img/Patas2.jpg" class="d-block w-100"
+                                    alt="Patamuslo">
+                            </div>
+                            <div class="col col-md-4"><img src="../img/pll.jpg" class="d-block w-100" alt="Pollo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col col-md-4"><img src="../img/Prodc.jpg" class="d-block w-100" alt="Productos">
+                            </div>
+                            <div class="col col-md-4"><img src="../img/Patas2.jpg" class="d-block w-100"
+                                    alt="Patamuslo">
+                            </div>
+                            <div class="col col-md-4"><img src="../img/pll.jpg" class="d-block w-100" alt="Pollo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col col-md-4"><img src="../img/Prodc.jpg" class="d-block w-100" alt="Productos">
+                            </div>
+                            <div class="col col-md-4"><img src="../img/Patas2.jpg" class="d-block w-100"
+                                    alt="Patamuslo">
+                            </div>
+                            <div class="col col-md-4"><img src="../img/pll.jpg" class="d-block w-100" alt="Pollo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselXxl"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselXxl"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </section>
     </main>
 
     <footer class="row">
         <ul id="redes" class="footer d-flex justify-content-around ">
             <li>
-                <a href="https://gmail.com"><img class="fIcon"
+                <a aria-current="page" href="https://gmail.com" target="_blank"><img class="fIcon"
                         src="../img/gmail.svg" alt=""></a>
             </li>
             <li>
-                <a href="https://instagram.com"><img
-                        src="../img/insta.svg"
-                        alt="" class="fIcon"></a>
+                <a aria-current="page" href="https://instagram.com" target="_blank"><img src="../img/insta.svg" alt=""
+                        class="fIcon"></a>
             </li>
             <li>
-                <a aria-current="page" href="https://facebook.com"><img class="fIcon"
-                        src="../img/facebook.svg"
-                        alt=""></a>
+                <a aria-current="page" href="https://facebook.com" target="_blank"><img class="fIcon"
+                        src="../img/facebook.svg" alt=""></a>
             </li>
             <li>
                 <a href="../index.html"><img class="fIcon" src="../img/AvLog-SL1.png" alt=""></a>
             </li>
         </ul>
-</footer>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">

@@ -23,6 +23,8 @@ header {
 
 main .wpp {
   margin: auto auto 4rem 1%;
+  background-color: #d1e3dd;
+  border: 1px solid #476a6f;
   width: 64px;
   height: 64px; }
 
@@ -52,12 +54,19 @@ main section.cuad article.cuadC div.dobC ul.SubSub {
       width: 48%;
       margin: 1%; } }
 
+main section.prodP div.card:hover {
+  transform: scale(1.1, 1.1); }
+
 main p.itemsC {
   margin-top: 2.5rem;
   margin-bottom: 1rem; }
 
 main P.NNR {
   margin-top: 1rem; }
+
+main button.carrito {
+  width: 100%;
+  background-color: #d1e3dd; }
 
 @media (min-width: 768px) {
   .HyU {

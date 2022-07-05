@@ -44,6 +44,8 @@ header {
 main {
     .wpp {
         margin: auto auto 4rem 1%;
+        background-color: color(secundario);
+        border: 1px solid color(principal);
         @include medidas1(64px, 64px);
 
     }
@@ -55,6 +57,7 @@ main {
     .parrafos {
         margin-top: $MTop;
     }
+
 
     section.cuad {
         article.cuadC {
@@ -89,6 +92,12 @@ main {
         }
     }
 
+    section.prodP {
+        div.card:hover {
+            transform: scale(1.1, 1.1);
+        }
+    }
+
     p.itemsC {
         margin-top: ($MTop+.5);
         margin-bottom: 1rem;
@@ -98,7 +107,13 @@ main {
     P.NNR {
         margin-top: ($MTop/2);
     }
+
+    button.carrito{
+        width: 100%;
+        background-color: color(secundario);
+    }
 }
+
 
 @include tablet {
     .HyU {
@@ -114,6 +129,7 @@ main {
         padding: 1%;
     }
 
+
 }
 
 @include desktop {
@@ -121,7 +137,8 @@ main {
         display: unset;
     }
 
-}
+    }
+
 
 footer {
     max-height: 4rem;
