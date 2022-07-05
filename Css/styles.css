@@ -54,8 +54,11 @@ main section.cuad article.cuadC div.dobC ul.SubSub {
       width: 48%;
       margin: 1%; } }
 
-main section.prodP div.card:hover {
-  transform: scale(1.1, 1.1); }
+main section.prodP {
+  margin: 10px 10px 20px 10px;
+  padding: 0 10px 10px 10px; }
+  main section.prodP div.card:focus {
+    transform: scale(1.1, 1.1); }
 
 main p.itemsC {
   margin-top: 2.5rem;
@@ -79,7 +82,9 @@ main button.carrito {
 
 @media (min-width: 1400px) {
   .HyU {
-    display: unset; } }
+    display: unset; }
+  section.prodP div.card:hover {
+    transform: scale(1.1, 1.1); } }
 
 footer {
   max-height: 4rem;

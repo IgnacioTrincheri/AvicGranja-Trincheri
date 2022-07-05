@@ -91,9 +91,10 @@ main {
             }
         }
     }
-
     section.prodP {
-        div.card:hover {
+        margin: 10px 10px 20px 10px;
+        padding: 0 10px 10px 10px;
+        div.card:focus {
             transform: scale(1.1, 1.1);
         }
     }
@@ -135,6 +136,13 @@ main {
 @include desktop {
     .HyU {
         display: unset;
+    }
+
+    section.prodP {
+        div.card:hover {
+            transform: scale(1.1, 1.1);
+        }
+
     }
 
     }
